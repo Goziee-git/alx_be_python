@@ -5,3 +5,6 @@ while i < pattern:
       print('*', end='')
    print()
    i += 1
+
+
+
