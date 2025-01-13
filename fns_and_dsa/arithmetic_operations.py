@@ -8,6 +8,6 @@ def perform_operation(num1, num2, operation):
          return num1 * num2
       case "divide":
          if num2 == 0:
-            print("Zero divisi0n not allowed")
+            print("Zero division not allowed")
          elif:
             return num1 / num2
