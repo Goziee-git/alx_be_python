@@ -5,12 +5,13 @@ def main():
     if len(sys.argv) != 3:
         print("Usage: python main.py <numerator> <denominator>")
         sys.exit(1)
-
-    numerator = sys.argv[1]
-    denominator = sys.argv[2]
-
-    result = safe_divide(numerator, denominator)
-    print(result)
+    try:
+        numerator = float(sys.argv[1])
+        denominator = float(sys.argv[2])
+        result = safe_divide(numerator, denominator)
+        print(f"The result of the division is {result}")
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
 
 if __name__ == "__main__":
     main()
