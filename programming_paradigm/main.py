@@ -9,7 +9,7 @@ def main():
         numerator = float(sys.argv[1])
         denominator = float(sys.argv[2])
         result = safe_divide(numerator, denominator)
-        print(f"The result of the division is {result}")
+        print(f"The result of the division is {result} ")
 
     except ValueError as e:
         print(f"Error: {e}", file=sys.stderr)
