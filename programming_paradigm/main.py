@@ -9,11 +9,18 @@ def main():
         numerator = float(sys.argv[1])
         denominator = float(sys.argv[2])
         result = safe_divide(numerator, denominator)
+<<<<<<< HEAD
         print(f"The result of the division is {result}")
 
     except ValueError as e:
         print(f"Error: {e}", file=sys.stderr)
 
         
+=======
+        print(f"The result of the division is  {result} ")
+
+    except ValueError as e:
+        print(f"Error: {e}", file=sys.stderr)
+>>>>>>> 575e21b1a5a9eb383caa1afc5fc7392eb2a54734
 if __name__ == "__main__":
     main()
